@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+        }
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute;
+            top: 40px;
+            left: 75px;
+            border: 3px solid #ffffff;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            justify-content: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            padding: 15px 15px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+        .section-content {
+            background-color: white;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            width: 70%;
+        }
+        .section-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+        .section-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pro-section, .interns-section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .pro-section .pro-image, .interns-section .interns-image {
+            margin-left: 20px;
+        }
+        .pro-image img, .interns-image img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        dl dt {
+            padding: 5px 5px;
+        }
+        dl dd {
+            padding: 5px 5px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="image.png" alt="profile pic" class="profile-pic">
+            <h1>Swarnalatha Kuna</h1>
+            <p>Passionate Software Engineer</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="profile.html">About</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
+        <div class="project-container">
+            <div class="pro-section">
+                <div class="section-content">
+                    <h2>Projects</h2>
+                    <li>
+                        Matrix Operation using files in c++:
+Developed C++ program to perform matrix operations (addition, subtraction, multiplication) using file input/output for efficient data handling. Implemented algorithms for matrix manipulation and error handling. Utilized object-oriented principles for modular code design and scalability. Demonstrated proficiency in C++ programming, file handling, and algorithmic problem-solving. Achieved optimized performance through efficient memory management and algorithm design. Enhanced understanding of computational techniques and data structures through practical application.
+</li>
+<li>Railway ticket booking system in c++:
+Developed a comprehensive Railway Ticket Booking System in C++ utilizing object-oriented programming principles. Implemented user-friendly interfaces for ticket reservation, cancellation, and seat availability checks. Incorporated secure payment processing functionalities and robust error handling mechanisms. Ensured efficient data management through file handling techniques for storing passenger details and train schedules. Employed algorithms for seat allocation and optimization. Demonstrated strong problem-solving skills and adherence to software engineering best practices.
+</li>
+<li>Title: Name Initials Finder (C Program)
+Title: Name Initials Finder (C Program) Description: Developed a C program to extract initials from a given name input. Implemented robust error handling to accommodate various input formats. Utilized string manipulation techniques to identify initials efficiently. Incorporated user-friendly interface for seamless interaction. Employed modular design for easy maintenance and scalability. Enhanced program efficiency through optimization techniques.
+                    </li>
+                </div>
+                <div class="pro-image">
+                    <img src="project.jpeg" alt="project pic">
+                </div>
+            </div>
+            <div class="interns-section">
+                <div class="section-content">
+                    <h2>Internships</h2>
+                    <dl>
+                        <dt><b>Artificial Intellegence</b></dt>
+                        <dd>From Microsoft (2022-2026)</dd>
+                        <dt><b>Web Development</b></dt>
+                        <dd>From Bharath Intern</dd>
+                        <dt><b>Azure Fundamentals</b></dt>
+                        <dd>From Microsoft</dd>
+                    </dl>
+                </div>
+                <div class="interns-image">
+                    <img src="intern.jpeg" alt="courses pic">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Swarnalatha Kuna</p>
+    </footer>
+</body>
+</html>
